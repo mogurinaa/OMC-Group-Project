@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class LogIn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -80,7 +80,7 @@ Partial Class Form1
         Me.Button2.Text = "Register"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Form1
+        'LogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -91,8 +91,8 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "LogIn"
+        Me.Text = "MAME Travel"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
