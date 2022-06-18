@@ -1,5 +1,5 @@
 ﻿Public Class Home
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboState.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
         If cboState.SelectedIndex = 0 Then
             'picLangkawi.Location = New Point(172, 70)

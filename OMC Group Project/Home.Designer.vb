@@ -22,42 +22,70 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.cboState = New System.Windows.Forms.ComboBox()
-        Me.picLangkawi = New System.Windows.Forms.PictureBox()
-        Me.picPPerhentian = New System.Windows.Forms.PictureBox()
-        Me.picCameron = New System.Windows.Forms.PictureBox()
-        Me.lblTest = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.panelPackage = New System.Windows.Forms.Panel()
+        Me.panelNavigation = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        CType(Me.picLangkawi, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picPPerhentian, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCameron, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.picLangkawi = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.picPPerhentian = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picCameron = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.panelPackage.SuspendLayout()
+        Me.panelNavigation.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLangkawi, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picPPerhentian, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCameron, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'panelPackage
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(227, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "State"
+        Me.panelPackage.AutoScroll = True
+        Me.panelPackage.Controls.Add(Me.PictureBox4)
+        Me.panelPackage.Controls.Add(Me.picLangkawi)
+        Me.panelPackage.Controls.Add(Me.PictureBox2)
+        Me.panelPackage.Controls.Add(Me.picPPerhentian)
+        Me.panelPackage.Controls.Add(Me.PictureBox1)
+        Me.panelPackage.Controls.Add(Me.picCameron)
+        Me.panelPackage.Location = New System.Drawing.Point(290, 106)
+        Me.panelPackage.Name = "panelPackage"
+        Me.panelPackage.Size = New System.Drawing.Size(361, 422)
+        Me.panelPackage.TabIndex = 9
         '
-        'cboState
+        'panelNavigation
         '
-        Me.cboState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboState.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboState.FormattingEnabled = True
-        Me.cboState.Items.AddRange(New Object() {"Kuala Lumpur", "Pulau Penang", "Terengganu", "Kelantan", "Selangor", "Negeri Sembilan", "Sabah", "Sarawak", "Pahang", "Johor"})
-        Me.cboState.Location = New System.Drawing.Point(230, 42)
-        Me.cboState.Name = "cboState"
-        Me.cboState.Size = New System.Drawing.Size(150, 24)
-        Me.cboState.TabIndex = 2
+        Me.panelNavigation.BackColor = System.Drawing.Color.MidnightBlue
+        Me.panelNavigation.Controls.Add(Me.Panel1)
+        Me.panelNavigation.Dock = System.Windows.Forms.DockStyle.Left
+        Me.panelNavigation.Location = New System.Drawing.Point(0, 0)
+        Me.panelNavigation.Name = "panelNavigation"
+        Me.panelNavigation.Size = New System.Drawing.Size(200, 600)
+        Me.panelNavigation.TabIndex = 9
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(200, 150)
+        Me.Panel1.TabIndex = 0
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.OMC_Group_Project.My.Resources.Resources.Sample_User_Icon
+        Me.PictureBox3.Location = New System.Drawing.Point(51, 46)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(77, 50)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
         '
         'picLangkawi
         '
@@ -70,6 +98,17 @@ Partial Class Home
         Me.picLangkawi.TabIndex = 3
         Me.picLangkawi.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 360)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(339, 61)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
         'picPPerhentian
         '
         Me.picPPerhentian.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
@@ -80,26 +119,6 @@ Partial Class Home
         Me.picPPerhentian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPPerhentian.TabIndex = 4
         Me.picPPerhentian.TabStop = False
-        '
-        'picCameron
-        '
-        Me.picCameron.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
-        Me.picCameron.Location = New System.Drawing.Point(0, 180)
-        Me.picCameron.Margin = New System.Windows.Forms.Padding(0)
-        Me.picCameron.Name = "picCameron"
-        Me.picCameron.Size = New System.Drawing.Size(339, 61)
-        Me.picCameron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picCameron.TabIndex = 5
-        Me.picCameron.TabStop = False
-        '
-        'lblTest
-        '
-        Me.lblTest.AutoSize = True
-        Me.lblTest.Location = New System.Drawing.Point(86, 110)
-        Me.lblTest.Name = "lblTest"
-        Me.lblTest.Size = New System.Drawing.Size(48, 16)
-        Me.lblTest.TabIndex = 6
-        Me.lblTest.Text = "Label2"
         '
         'PictureBox1
         '
@@ -112,60 +131,60 @@ Partial Class Home
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox2
+        'picCameron
         '
-        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 360)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(339, 61)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
+        Me.picCameron.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
+        Me.picCameron.Location = New System.Drawing.Point(0, 180)
+        Me.picCameron.Margin = New System.Windows.Forms.Padding(0)
+        Me.picCameron.Name = "picCameron"
+        Me.picCameron.Size = New System.Drawing.Size(339, 61)
+        Me.picCameron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCameron.TabIndex = 5
+        Me.picCameron.TabStop = False
         '
-        'Panel1
+        'PictureBox4
         '
-        Me.Panel1.AutoScroll = True
-        Me.Panel1.Controls.Add(Me.picLangkawi)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.picPPerhentian)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.picCameron)
-        Me.Panel1.Location = New System.Drawing.Point(418, 82)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(345, 529)
-        Me.Panel1.TabIndex = 9
+        Me.PictureBox4.Image = Global.OMC_Group_Project.My.Resources.Resources.photo_1637115873956_78b504f59de5
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 450)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(339, 61)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 9
+        Me.PictureBox4.TabStop = False
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1006, 613)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.lblTest)
-        Me.Controls.Add(Me.cboState)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1000, 600)
+        Me.Controls.Add(Me.panelNavigation)
+        Me.Controls.Add(Me.panelPackage)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home"
-        CType(Me.picLangkawi, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picPPerhentian, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCameron, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelPackage.ResumeLayout(False)
+        Me.panelNavigation.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLangkawi, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picPPerhentian, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCameron, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents cboState As ComboBox
     Friend WithEvents picLangkawi As PictureBox
     Friend WithEvents picPPerhentian As PictureBox
     Friend WithEvents picCameron As PictureBox
-    Friend WithEvents lblTest As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents panelPackage As Panel
+    Friend WithEvents panelNavigation As Panel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class
