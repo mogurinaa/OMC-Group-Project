@@ -29,6 +29,7 @@ Partial Class Register
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'Button1
@@ -51,9 +52,10 @@ Partial Class Register
         '
         'TextBox1
         '
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Location = New System.Drawing.Point(136, 35)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(100, 15)
         Me.TextBox1.TabIndex = 2
         '
         'TextBox2
@@ -88,11 +90,20 @@ Partial Class Register
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Password"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 25)
+        Me.Panel2.TabIndex = 7
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox3)
@@ -100,7 +111,9 @@ Partial Class Register
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Register"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -114,4 +127,5 @@ Partial Class Register
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Panel2 As Panel
 End Class
