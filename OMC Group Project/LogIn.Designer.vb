@@ -23,7 +23,6 @@ Partial Class LogIn
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlWinControl = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -33,31 +32,27 @@ Partial Class LogIn
         Me.lblRegister = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnMinimise = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.pnlWinControl.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlWinControl
         '
         Me.pnlWinControl.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.pnlWinControl.Controls.Add(Me.btnMinimise)
+        Me.pnlWinControl.Controls.Add(Me.btnClose)
         Me.pnlWinControl.Controls.Add(Me.PictureBox2)
         Me.pnlWinControl.Location = New System.Drawing.Point(0, 0)
         Me.pnlWinControl.Name = "pnlWinControl"
         Me.pnlWinControl.Size = New System.Drawing.Size(450, 25)
         Me.pnlWinControl.TabIndex = 8
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -132,10 +127,11 @@ Partial Class LogIn
         '
         'btnLogin
         '
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.Image = Global.OMC_Group_Project.My.Resources.Resources.btnLogin
-        Me.btnLogin.Location = New System.Drawing.Point(151, 348)
+        Me.btnLogin.Location = New System.Drawing.Point(152, 352)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(133, 50)
+        Me.btnLogin.Size = New System.Drawing.Size(120, 50)
         Me.btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnLogin.TabIndex = 19
         Me.btnLogin.TabStop = False
@@ -150,6 +146,52 @@ Partial Class LogIn
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
+        '
+        'btnMinimise
+        '
+        Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
+        Me.btnMinimise.FlatAppearance.BorderSize = 0
+        Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
+        Me.btnMinimise.Location = New System.Drawing.Point(400, 0)
+        Me.btnMinimise.Name = "btnMinimise"
+        Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
+        Me.btnMinimise.TabIndex = 21
+        Me.btnMinimise.UseVisualStyleBackColor = False
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
+        Me.btnClose.Location = New System.Drawing.Point(424, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(27, 24)
+        Me.btnClose.TabIndex = 20
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 11
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = Global.OMC_Group_Project.My.Resources.Resources.tree_svg
+        Me.PictureBox3.Location = New System.Drawing.Point(48, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(592, 608)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
         '
         'LogIn
         '
@@ -167,19 +209,21 @@ Partial Class LogIn
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlWinControl)
-        Me.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LogIn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MAME Travel"
         Me.pnlWinControl.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnLogin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
-    End Sub
+End Sub
 
     Friend WithEvents pnlWinControl As Panel
     Friend WithEvents PictureBox1 As PictureBox
@@ -192,4 +236,7 @@ Partial Class LogIn
     Friend WithEvents Label2 As Label
     Friend WithEvents lblRegister As Label
     Friend WithEvents btnLogin As PictureBox
+    Friend WithEvents btnClose As Button
+    Friend WithEvents btnMinimise As Button
+    Friend WithEvents PictureBox3 As PictureBox
 End Class
