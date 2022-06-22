@@ -92,10 +92,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Home.vb">
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company.Designer.vb">
+      <DependentUpon>Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_User.Designer.vb">
+      <DependentUpon>Register_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogIn.vb">
@@ -103,12 +121,6 @@
     </Compile>
     <Compile Include="LogIn.Designer.vb">
       <DependentUpon>LogIn.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Register.Designer.vb">
-      <DependentUpon>Register.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Register.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -134,8 +146,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company.resx">
+      <DependentUpon>Company.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_User.resx">
+      <DependentUpon>Register_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.vb</DependentUpon>
@@ -145,9 +166,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
-      <DependentUpon>Register.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
