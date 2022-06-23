@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Register_User
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Register_Company
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,13 @@ Partial Class Register_User
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimise = New System.Windows.Forms.Button()
+        Me.btnMaximise = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -42,14 +46,10 @@ Partial Class Register_User
         Me.txtAddress2 = New System.Windows.Forms.TextBox()
         Me.btnReg = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnMinimise = New System.Windows.Forms.Button()
-        Me.btnMaximise = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlControl.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnReg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlControl
@@ -63,6 +63,54 @@ Partial Class Register_User
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(600, 25)
         Me.pnlControl.TabIndex = 2
+        '
+        'btnMinimise
+        '
+        Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
+        Me.btnMinimise.FlatAppearance.BorderSize = 0
+        Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
+        Me.btnMinimise.Location = New System.Drawing.Point(524, 0)
+        Me.btnMinimise.Name = "btnMinimise"
+        Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
+        Me.btnMinimise.TabIndex = 25
+        Me.btnMinimise.UseVisualStyleBackColor = False
+        '
+        'btnMaximise
+        '
+        Me.btnMaximise.BackColor = System.Drawing.Color.Transparent
+        Me.btnMaximise.Enabled = False
+        Me.btnMaximise.FlatAppearance.BorderSize = 0
+        Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
+        Me.btnMaximise.Location = New System.Drawing.Point(548, -1)
+        Me.btnMaximise.Name = "btnMaximise"
+        Me.btnMaximise.Size = New System.Drawing.Size(27, 24)
+        Me.btnMaximise.TabIndex = 24
+        Me.btnMaximise.UseVisualStyleBackColor = False
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
+        Me.btnClose.Location = New System.Drawing.Point(573, -1)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(27, 24)
+        Me.btnClose.TabIndex = 23
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
         '
         'txtUsername
         '
@@ -88,11 +136,11 @@ Partial Class Register_User
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(215, 64)
+        Me.Label1.Location = New System.Drawing.Point(204, 63)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 23)
+        Me.Label1.Size = New System.Drawing.Size(191, 23)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Register New User"
+        Me.Label1.Text = "Register New Company"
         '
         'Panel2
         '
@@ -126,9 +174,9 @@ Partial Class Register_User
         Me.txtName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtName.Location = New System.Drawing.Point(93, 164)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(182, 20)
+        Me.txtName.Size = New System.Drawing.Size(412, 20)
         Me.txtName.TabIndex = 10
-        Me.txtName.Text = "Full Name"
+        Me.txtName.Text = "Company Name"
         '
         'Panel4
         '
@@ -198,7 +246,7 @@ Partial Class Register_User
         Me.txtAddress1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddress1.Location = New System.Drawing.Point(93, 314)
         Me.txtAddress1.Name = "txtAddress1"
-        Me.txtAddress1.Size = New System.Drawing.Size(182, 20)
+        Me.txtAddress1.Size = New System.Drawing.Size(412, 20)
         Me.txtAddress1.TabIndex = 18
         Me.txtAddress1.Text = "Address 1"
         '
@@ -216,7 +264,7 @@ Partial Class Register_User
         Me.txtAddress2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddress2.Location = New System.Drawing.Point(93, 361)
         Me.txtAddress2.Name = "txtAddress2"
-        Me.txtAddress2.Size = New System.Drawing.Size(182, 20)
+        Me.txtAddress2.Size = New System.Drawing.Size(412, 20)
         Me.txtAddress2.TabIndex = 20
         Me.txtAddress2.Text = "Address 2"
         '
@@ -241,55 +289,7 @@ Partial Class Register_User
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'btnMinimise
-        '
-        Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
-        Me.btnMinimise.FlatAppearance.BorderSize = 0
-        Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
-        Me.btnMinimise.Location = New System.Drawing.Point(524, 0)
-        Me.btnMinimise.Name = "btnMinimise"
-        Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
-        Me.btnMinimise.TabIndex = 25
-        Me.btnMinimise.UseVisualStyleBackColor = False
-        '
-        'btnMaximise
-        '
-        Me.btnMaximise.BackColor = System.Drawing.Color.Transparent
-        Me.btnMaximise.Enabled = False
-        Me.btnMaximise.FlatAppearance.BorderSize = 0
-        Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
-        Me.btnMaximise.Location = New System.Drawing.Point(548, -1)
-        Me.btnMaximise.Name = "btnMaximise"
-        Me.btnMaximise.Size = New System.Drawing.Size(27, 24)
-        Me.btnMaximise.TabIndex = 24
-        Me.btnMaximise.UseVisualStyleBackColor = False
-        '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.Transparent
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
-        Me.btnClose.Location = New System.Drawing.Point(573, -1)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(27, 24)
-        Me.btnClose.TabIndex = 23
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 22
-        Me.PictureBox2.TabStop = False
-        '
-        'Register_User
+        'Register_Company
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -315,13 +315,13 @@ Partial Class Register_User
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlControl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Register_User"
+        Me.Name = "Register_Company"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register_User"
         Me.pnlControl.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnReg, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

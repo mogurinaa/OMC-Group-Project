@@ -75,59 +75,6 @@ Public Class User
 
         End Try
     End Sub
-
-    'Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnHome.Height
-    '    panelNav.Top = btnHome.Top
-    '    panelNav.Left = btnHome.Left
-    '    btnHome.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnTravelPlan_Click(sender As Object, e As EventArgs) Handles btnTravelPlan.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnTravelPlan.Height
-    '    panelNav.Top = btnTravelPlan.Top
-    '    panelNav.Left = btnTravelPlan.Left
-    '    btnTravelPlan.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnSettings.Height
-    '    panelNav.Top = btnSettings.Top
-    '    panelNav.Left = btnSettings.Left
-    '    btnSettings.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnCSV_Click(sender As Object, e As EventArgs) Handles btnCSV.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnCSV.Height
-    '    panelNav.Top = btnCSV.Top
-    '    panelNav.Left = btnCSV.Left
-    '    btnCSV.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnTravelPlan_Leave(sender As Object, e As EventArgs) Handles btnTravelPlan.Leave
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
-    'Private Sub btnSettings_Leave(sender As Object, e As EventArgs) Handles btnSettings.Leave
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
-    'Private Sub btnCSV_Leave(sender As Object, e As EventArgs) Handles btnCSV.Leave
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -180,7 +127,8 @@ Public Class User
     End Sub
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
-
+        Booking_Confirmation.Show()
+        Me.Hide()
     End Sub
 
     Private Sub btnMinimise_Click(sender As Object, e As EventArgs) Handles btnMinimise.Click
@@ -230,5 +178,10 @@ Public Class User
 
     Private Sub btnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
         btnTravelPlan.PerformClick()
+    End Sub
+
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+        LogIn.Show()
+        Me.Hide()
     End Sub
 End Class

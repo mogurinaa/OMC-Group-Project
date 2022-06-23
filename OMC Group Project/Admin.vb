@@ -21,112 +21,73 @@ Public Class Admin
         TabControl1.ItemSize = New Size(0, 1)
         TabControl1.SizeMode = TabSizeMode.Fixed
 
-        btnHome.PerformClick()
+        btnDashboard.PerformClick()
     End Sub
 
-    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnHome.Click, btnTravelPlan.Click, btnSettings.Click, btnCSV.Click
+    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click, btnApproval.Click, btnViewUser.Click, btnViewPlan.Click, btnViewBooking.Click
         Try
 
             Dim Mybutton = DirectCast(sender, Button)
 
             Select Case Mybutton.Name
-                Case "btnHome"
+                Case "btnDashboard"
                     TabControl1.SelectedTab = TabPage1
-                    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-                    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-                    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-                    panelNav.Height = btnHome.Height
-                    panelNav.Top = btnHome.Top
-                    panelNav.Left = btnHome.Left
-                    btnHome.BackColor = Color.FromArgb(111, 192, 232)
-                Case "btnTravelPlan"
+                    btnApproval.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewUser.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewPlan.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewBooking.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnDashboard.Height
+                    panelNav.Top = btnDashboard.Top
+                    panelNav.Left = btnDashboard.Left
+                    btnDashboard.BackColor = Color.FromArgb(111, 192, 232)
+                Case "btnApproval"
                     TabControl1.SelectedTab = TabPage2
-                    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-                    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-                    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-                    panelNav.Height = btnTravelPlan.Height
-                    panelNav.Top = btnTravelPlan.Top
-                    panelNav.Left = btnTravelPlan.Left
-                    btnTravelPlan.BackColor = Color.FromArgb(111, 192, 232)
+                    btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewUser.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewPlan.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewBooking.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnApproval.Height
+                    panelNav.Top = btnApproval.Top
+                    panelNav.Left = btnApproval.Left
+                    btnApproval.BackColor = Color.FromArgb(111, 192, 232)
 
                     pictRect.Image = New Bitmap(My.Resources.Travel_Rectangle_BG)
                     pictRect2.Image = New Bitmap(My.Resources.Travel_Rectangle_BG)
-                Case "btnSettings"
+                Case "btnViewUser"
                     TabControl1.SelectedTab = TabPage3
-                    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-                    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-                    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-                    panelNav.Height = btnSettings.Height
-                    panelNav.Top = btnSettings.Top
-                    panelNav.Left = btnSettings.Left
-                    btnSettings.BackColor = Color.FromArgb(111, 192, 232)
-                Case "btnCSV"
+                    btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnApproval.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewPlan.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewBooking.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnViewUser.Height
+                    panelNav.Top = btnViewUser.Top
+                    panelNav.Left = btnViewUser.Left
+                    btnViewUser.BackColor = Color.FromArgb(111, 192, 232)
+                Case "btnViewPlan"
                     TabControl1.SelectedTab = TabPage4
-                    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-                    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-                    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-                    panelNav.Height = btnCSV.Height
-                    panelNav.Top = btnCSV.Top
-                    panelNav.Left = btnCSV.Left
-                    btnCSV.BackColor = Color.FromArgb(111, 192, 232)
+                    btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnApproval.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewUser.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewBooking.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnViewPlan.Height
+                    panelNav.Top = btnViewPlan.Top
+                    panelNav.Left = btnViewPlan.Left
+                    btnViewPlan.BackColor = Color.FromArgb(111, 192, 232)
+                Case "btnViewBooking"
+                    TabControl1.SelectedTab = TabPage4
+                    btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnApproval.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewUser.BackColor = Color.FromArgb(64, 141, 179)
+                    btnViewPlan.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnViewBooking.Height
+                    panelNav.Top = btnViewBooking.Top
+                    panelNav.Left = btnViewBooking.Left
+                    btnViewBooking.BackColor = Color.FromArgb(111, 192, 232)
             End Select
         Catch ex As Exception
 
         End Try
     End Sub
-
-    'Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnHome.Height
-    '    panelNav.Top = btnHome.Top
-    '    panelNav.Left = btnHome.Left
-    '    btnHome.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnTravelPlan_Click(sender As Object, e As EventArgs) Handles btnTravelPlan.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnTravelPlan.Height
-    '    panelNav.Top = btnTravelPlan.Top
-    '    panelNav.Left = btnTravelPlan.Left
-    '    btnTravelPlan.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnSettings.Height
-    '    panelNav.Top = btnSettings.Top
-    '    panelNav.Left = btnSettings.Left
-    '    btnSettings.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnCSV_Click(sender As Object, e As EventArgs) Handles btnCSV.Click
-    '    btnHome.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    '    panelNav.Height = btnCSV.Height
-    '    panelNav.Top = btnCSV.Top
-    '    panelNav.Left = btnCSV.Left
-    '    btnCSV.BackColor = Color.FromArgb(111, 192, 232)
-    'End Sub
-
-    'Private Sub btnTravelPlan_Leave(sender As Object, e As EventArgs) Handles btnTravelPlan.Leave
-    '    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
-    'Private Sub btnSettings_Leave(sender As Object, e As EventArgs) Handles btnSettings.Leave
-    '    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
-    'Private Sub btnCSV_Leave(sender As Object, e As EventArgs) Handles btnCSV.Leave
-    '    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
-    'End Sub
-
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -152,16 +113,7 @@ Public Class Admin
     Private Sub btnDown_MouseLeave(sender As Object, e As EventArgs) Handles btnDown.MouseLeave
         btnDown.Image = New Bitmap(My.Resources.btnDown)
     End Sub
-
-    Private Sub btnConfirm_MouseEnter(sender As Object, e As EventArgs) Handles btnConfirm.MouseEnter
-        btnConfirm.Image = New Bitmap(My.Resources.btnConfirmHover)
-    End Sub
-
-    Private Sub btnConfirm_MouseLeave(sender As Object, e As EventArgs) Handles btnConfirm.MouseLeave
-        btnConfirm.Image = New Bitmap(My.Resources.btnConfirm)
-    End Sub
-
-    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -194,16 +146,12 @@ Public Class Admin
         btnCancel.Image = New Bitmap(My.Resources.btnCancel)
     End Sub
 
-    Private Sub btnSend_MouseEnter(sender As Object, e As EventArgs) Handles btnSend.MouseEnter
-        btnSend.Image = New Bitmap(My.Resources.btnSendHover)
-    End Sub
-
-    Private Sub btnSend_MouseLeave(sender As Object, e As EventArgs) Handles btnSend.MouseLeave
-        btnSend.Image = New Bitmap(My.Resources.btnSend)
-    End Sub
-
-
     Private Sub btnBook_Click(sender As Object, e As EventArgs)
-        btnTravelPlan.PerformClick()
+        btnApproval.PerformClick()
+    End Sub
+
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+        LogIn.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Register_User
+﻿Public Class Register_Company
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -25,7 +25,7 @@
     End Sub
 
     Private Sub btnReg_Click(sender As Object, e As EventArgs) Handles btnReg.Click
-        User.Show()
+        Company.Show()
         Me.Hide()
     End Sub
 End Class

@@ -23,8 +23,8 @@ Partial Class LogIn
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlWinControl = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnMinimise = New System.Windows.Forms.Button()
+        Me.btnMaximize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,12 +34,21 @@ Partial Class LogIn
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblRegister = New System.Windows.Forms.Label()
+        Me.lblForgot = New System.Windows.Forms.Label()
+        Me.pnlRegOption = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnCancelReg = New System.Windows.Forms.PictureBox()
+        Me.btnNewComp = New System.Windows.Forms.PictureBox()
+        Me.btnNewUser = New System.Windows.Forms.PictureBox()
         Me.btnLogin = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.lblForgot = New System.Windows.Forms.Label()
         Me.pnlWinControl.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlRegOption.SuspendLayout()
+        CType(Me.btnCancelReg, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnNewComp, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnNewUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,8 +57,8 @@ Partial Class LogIn
         'pnlWinControl
         '
         Me.pnlWinControl.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.pnlWinControl.Controls.Add(Me.Button1)
         Me.pnlWinControl.Controls.Add(Me.btnMinimise)
+        Me.pnlWinControl.Controls.Add(Me.btnMaximize)
         Me.pnlWinControl.Controls.Add(Me.btnClose)
         Me.pnlWinControl.Controls.Add(Me.PictureBox2)
         Me.pnlWinControl.Location = New System.Drawing.Point(0, 0)
@@ -57,30 +66,30 @@ Partial Class LogIn
         Me.pnlWinControl.Size = New System.Drawing.Size(450, 25)
         Me.pnlWinControl.TabIndex = 8
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
-        Me.Button1.Location = New System.Drawing.Point(376, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(27, 24)
-        Me.Button1.TabIndex = 22
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'btnMinimise
         '
         Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
-        Me.btnMinimise.Enabled = False
         Me.btnMinimise.FlatAppearance.BorderSize = 0
         Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
-        Me.btnMinimise.Location = New System.Drawing.Point(400, 0)
+        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
+        Me.btnMinimise.Location = New System.Drawing.Point(376, 0)
         Me.btnMinimise.Name = "btnMinimise"
         Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
-        Me.btnMinimise.TabIndex = 21
+        Me.btnMinimise.TabIndex = 22
         Me.btnMinimise.UseVisualStyleBackColor = False
+        '
+        'btnMaximize
+        '
+        Me.btnMaximize.BackColor = System.Drawing.Color.Transparent
+        Me.btnMaximize.Enabled = False
+        Me.btnMaximize.FlatAppearance.BorderSize = 0
+        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximize.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
+        Me.btnMaximize.Location = New System.Drawing.Point(400, 0)
+        Me.btnMaximize.Name = "btnMaximize"
+        Me.btnMaximize.Size = New System.Drawing.Size(27, 24)
+        Me.btnMaximize.TabIndex = 21
+        Me.btnMaximize.UseVisualStyleBackColor = False
         '
         'btnClose
         '
@@ -176,6 +185,74 @@ Partial Class LogIn
         Me.lblRegister.TabIndex = 18
         Me.lblRegister.Text = "Click here to register!"
         '
+        'lblForgot
+        '
+        Me.lblForgot.AutoSize = True
+        Me.lblForgot.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblForgot.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblForgot.Location = New System.Drawing.Point(135, 426)
+        Me.lblForgot.Name = "lblForgot"
+        Me.lblForgot.Size = New System.Drawing.Size(178, 28)
+        Me.lblForgot.TabIndex = 21
+        Me.lblForgot.Text = "Forgot Password?"
+        '
+        'pnlRegOption
+        '
+        Me.pnlRegOption.Controls.Add(Me.Label3)
+        Me.pnlRegOption.Controls.Add(Me.btnCancelReg)
+        Me.pnlRegOption.Controls.Add(Me.btnNewComp)
+        Me.pnlRegOption.Controls.Add(Me.btnNewUser)
+        Me.pnlRegOption.Location = New System.Drawing.Point(0, 24)
+        Me.pnlRegOption.Name = "pnlRegOption"
+        Me.pnlRegOption.Size = New System.Drawing.Size(451, 541)
+        Me.pnlRegOption.TabIndex = 22
+        Me.pnlRegOption.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Location = New System.Drawing.Point(100, 60)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(254, 32)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Register New Account"
+        '
+        'btnCancelReg
+        '
+        Me.btnCancelReg.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelReg.Image = Global.OMC_Group_Project.My.Resources.Resources.btnCancelReg
+        Me.btnCancelReg.Location = New System.Drawing.Point(124, 420)
+        Me.btnCancelReg.Name = "btnCancelReg"
+        Me.btnCancelReg.Size = New System.Drawing.Size(190, 50)
+        Me.btnCancelReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCancelReg.TabIndex = 2
+        Me.btnCancelReg.TabStop = False
+        '
+        'btnNewComp
+        '
+        Me.btnNewComp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNewComp.Image = Global.OMC_Group_Project.My.Resources.Resources.btnNewComp
+        Me.btnNewComp.Location = New System.Drawing.Point(124, 245)
+        Me.btnNewComp.Name = "btnNewComp"
+        Me.btnNewComp.Size = New System.Drawing.Size(190, 50)
+        Me.btnNewComp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnNewComp.TabIndex = 1
+        Me.btnNewComp.TabStop = False
+        '
+        'btnNewUser
+        '
+        Me.btnNewUser.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNewUser.Image = Global.OMC_Group_Project.My.Resources.Resources.btnNewUser
+        Me.btnNewUser.Location = New System.Drawing.Point(124, 189)
+        Me.btnNewUser.Name = "btnNewUser"
+        Me.btnNewUser.Size = New System.Drawing.Size(190, 50)
+        Me.btnNewUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnNewUser.TabIndex = 0
+        Me.btnNewUser.TabStop = False
+        '
         'btnLogin
         '
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
@@ -209,23 +286,14 @@ Partial Class LogIn
         Me.PictureBox3.TabIndex = 20
         Me.PictureBox3.TabStop = False
         '
-        'lblForgot
-        '
-        Me.lblForgot.AutoSize = True
-        Me.lblForgot.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblForgot.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblForgot.Location = New System.Drawing.Point(135, 426)
-        Me.lblForgot.Name = "lblForgot"
-        Me.lblForgot.Size = New System.Drawing.Size(178, 28)
-        Me.lblForgot.TabIndex = 21
-        Me.lblForgot.Text = "Forgot Password?"
-        '
         'LogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(450, 565)
+        Me.Controls.Add(Me.pnlWinControl)
+        Me.Controls.Add(Me.pnlRegOption)
         Me.Controls.Add(Me.lblForgot)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.lblRegister)
@@ -236,7 +304,6 @@ Partial Class LogIn
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.pnlWinControl)
         Me.Controls.Add(Me.PictureBox3)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -245,6 +312,11 @@ Partial Class LogIn
         Me.Text = "MAME Travel"
         Me.pnlWinControl.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlRegOption.ResumeLayout(False)
+        Me.pnlRegOption.PerformLayout()
+        CType(Me.btnCancelReg, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnNewComp, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnNewUser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnLogin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -265,8 +337,13 @@ End Sub
     Friend WithEvents lblRegister As Label
     Friend WithEvents btnLogin As PictureBox
     Friend WithEvents btnClose As Button
-    Friend WithEvents btnMinimise As Button
+    Friend WithEvents btnMaximize As Button
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnMinimise As Button
     Friend WithEvents lblForgot As Label
+    Friend WithEvents pnlRegOption As Panel
+    Friend WithEvents btnNewComp As PictureBox
+    Friend WithEvents btnNewUser As PictureBox
+    Friend WithEvents btnCancelReg As PictureBox
+    Friend WithEvents Label3 As Label
 End Class
