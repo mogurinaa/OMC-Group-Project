@@ -205,8 +205,45 @@
   <data name="Travel_Rect_BG2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\Downloads\MAME Travel\Travel Rect BG2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\Downloads\MAME Travel\btnBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBook" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        lsDiAX8AAAAASUVORK5CYII=
+</value>
   </data>
   <data name="btnCancelHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\Downloads\MAME Travel\btnCancelHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
