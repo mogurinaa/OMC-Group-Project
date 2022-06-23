@@ -44,6 +44,7 @@ Partial Class Booking_Confirmation
         Me.btnConfirm = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.pnlControl.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnConfirm, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +61,7 @@ Partial Class Booking_Confirmation
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlControl.Location = New System.Drawing.Point(0, 0)
         Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(1000, 25)
+        Me.pnlControl.Size = New System.Drawing.Size(879, 25)
         Me.pnlControl.TabIndex = 3
         '
         'btnMinimise
@@ -69,7 +70,7 @@ Partial Class Booking_Confirmation
         Me.btnMinimise.FlatAppearance.BorderSize = 0
         Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
-        Me.btnMinimise.Location = New System.Drawing.Point(924, 0)
+        Me.btnMinimise.Location = New System.Drawing.Point(800, 0)
         Me.btnMinimise.Name = "btnMinimise"
         Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
         Me.btnMinimise.TabIndex = 25
@@ -82,7 +83,7 @@ Partial Class Booking_Confirmation
         Me.btnMaximise.FlatAppearance.BorderSize = 0
         Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
-        Me.btnMaximise.Location = New System.Drawing.Point(948, 0)
+        Me.btnMaximise.Location = New System.Drawing.Point(824, 0)
         Me.btnMaximise.Name = "btnMaximise"
         Me.btnMaximise.Size = New System.Drawing.Size(27, 24)
         Me.btnMaximise.TabIndex = 24
@@ -94,7 +95,7 @@ Partial Class Booking_Confirmation
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
-        Me.btnClose.Location = New System.Drawing.Point(973, 0)
+        Me.btnClose.Location = New System.Drawing.Point(849, 0)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(27, 24)
         Me.btnClose.TabIndex = 23
@@ -115,7 +116,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(100, 107)
+        Me.Label1.Location = New System.Drawing.Point(42, 107)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(101, 23)
         Me.Label1.TabIndex = 4
@@ -125,7 +126,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(90, 188)
+        Me.Label2.Location = New System.Drawing.Point(32, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(111, 23)
         Me.Label2.TabIndex = 5
@@ -135,7 +136,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(106, 148)
+        Me.Label3.Location = New System.Drawing.Point(48, 148)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 23)
         Me.Label3.TabIndex = 6
@@ -143,7 +144,7 @@ Partial Class Booking_Confirmation
         '
         'dateStart
         '
-        Me.dateStart.Location = New System.Drawing.Point(219, 149)
+        Me.dateStart.Location = New System.Drawing.Point(161, 149)
         Me.dateStart.Name = "dateStart"
         Me.dateStart.Size = New System.Drawing.Size(246, 22)
         Me.dateStart.TabIndex = 7
@@ -151,7 +152,7 @@ Partial Class Booking_Confirmation
         '
         'txtTravelPlan
         '
-        Me.txtTravelPlan.Location = New System.Drawing.Point(219, 109)
+        Me.txtTravelPlan.Location = New System.Drawing.Point(161, 109)
         Me.txtTravelPlan.Name = "txtTravelPlan"
         Me.txtTravelPlan.ReadOnly = True
         Me.txtTravelPlan.Size = New System.Drawing.Size(246, 22)
@@ -159,7 +160,7 @@ Partial Class Booking_Confirmation
         '
         'txtPerson
         '
-        Me.txtPerson.Location = New System.Drawing.Point(219, 189)
+        Me.txtPerson.Location = New System.Drawing.Point(161, 189)
         Me.txtPerson.Name = "txtPerson"
         Me.txtPerson.Size = New System.Drawing.Size(74, 22)
         Me.txtPerson.TabIndex = 9
@@ -167,7 +168,7 @@ Partial Class Booking_Confirmation
         '
         'txtTotalPrice
         '
-        Me.txtTotalPrice.Location = New System.Drawing.Point(219, 282)
+        Me.txtTotalPrice.Location = New System.Drawing.Point(161, 282)
         Me.txtTotalPrice.Name = "txtTotalPrice"
         Me.txtTotalPrice.ReadOnly = True
         Me.txtTotalPrice.Size = New System.Drawing.Size(134, 22)
@@ -177,7 +178,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(104, 282)
+        Me.Label4.Location = New System.Drawing.Point(46, 282)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(97, 23)
         Me.Label4.TabIndex = 10
@@ -185,7 +186,7 @@ Partial Class Booking_Confirmation
         '
         'dateEnd
         '
-        Me.dateEnd.Location = New System.Drawing.Point(655, 149)
+        Me.dateEnd.Location = New System.Drawing.Point(597, 149)
         Me.dateEnd.Name = "dateEnd"
         Me.dateEnd.Size = New System.Drawing.Size(246, 22)
         Me.dateEnd.TabIndex = 13
@@ -195,7 +196,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(549, 148)
+        Me.Label5.Location = New System.Drawing.Point(491, 148)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 23)
         Me.Label5.TabIndex = 12
@@ -203,7 +204,7 @@ Partial Class Booking_Confirmation
         '
         'txtDays
         '
-        Me.txtDays.Location = New System.Drawing.Point(219, 243)
+        Me.txtDays.Location = New System.Drawing.Point(161, 243)
         Me.txtDays.Name = "txtDays"
         Me.txtDays.ReadOnly = True
         Me.txtDays.Size = New System.Drawing.Size(51, 22)
@@ -213,7 +214,7 @@ Partial Class Booking_Confirmation
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(105, 242)
+        Me.Label6.Location = New System.Drawing.Point(47, 242)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(96, 23)
         Me.Label6.TabIndex = 14
@@ -245,7 +246,7 @@ Partial Class Booking_Confirmation
         '
         Me.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnConfirm.Image = Global.OMC_Group_Project.My.Resources.Resources.btnConfirm
-        Me.btnConfirm.Location = New System.Drawing.Point(353, 365)
+        Me.btnConfirm.Location = New System.Drawing.Point(295, 365)
         Me.btnConfirm.Name = "btnConfirm"
         Me.btnConfirm.Size = New System.Drawing.Size(263, 70)
         Me.btnConfirm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -256,7 +257,7 @@ Partial Class Booking_Confirmation
         '
         Me.GroupBox1.Controls.Add(Me.rbtOnlineBanking)
         Me.GroupBox1.Controls.Add(Me.rbtEWallet)
-        Me.GroupBox1.Location = New System.Drawing.Point(553, 226)
+        Me.GroupBox1.Location = New System.Drawing.Point(495, 226)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox1.TabIndex = 19
@@ -267,17 +268,27 @@ Partial Class Booking_Confirmation
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(385, 43)
+        Me.Label7.Location = New System.Drawing.Point(327, 43)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(210, 35)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "Confirm Booking"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(177, 390)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "Cancel"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Booking_Confirmation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1000, 474)
+        Me.ClientSize = New System.Drawing.Size(879, 474)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnConfirm)
@@ -330,4 +341,5 @@ Partial Class Booking_Confirmation
     Friend WithEvents btnConfirm As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button1 As Button
 End Class
