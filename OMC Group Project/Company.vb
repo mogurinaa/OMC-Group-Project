@@ -25,7 +25,7 @@ Public Class Company
         btnDashboard.PerformClick()
     End Sub
 
-    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click, btnAddNew.Click, btnPlanList.Click, btnSettings.Click, btnCSV.Click
+    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click, btnAddNew.Click, btnPlanList.Click, btnFeedback.Click, btnSettings.Click, btnCSV.Click
         Try
 
             Dim Mybutton = DirectCast(sender, Button)
@@ -35,6 +35,7 @@ Public Class Company
                     TabControl1.SelectedTab = TabPage5
                     btnAddNew.BackColor = Color.FromArgb(64, 141, 179)
                     btnPlanList.BackColor = Color.FromArgb(64, 141, 179)
+                    btnFeedback.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnDashboard.Height
@@ -44,6 +45,8 @@ Public Class Company
                 Case "btnPlanList"
                     TabControl1.SelectedTab = TabPage2
                     btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnAddNew.BackColor = Color.FromArgb(64, 141, 179)
+                    btnFeedback.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnPlanList.Height
@@ -57,6 +60,7 @@ Public Class Company
                     TabControl1.SelectedTab = TabPage1
                     btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
                     btnPlanList.BackColor = Color.FromArgb(64, 141, 179)
+                    btnFeedback.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnAddNew.Height
@@ -66,10 +70,22 @@ Public Class Company
 
                     pictRect.Image = New Bitmap(My.Resources.Travel_Rectangle_BG)
                     pictRect2.Image = New Bitmap(My.Resources.Travel_Rectangle_BG)
+                Case "btnFeedback"
+                    TabControl1.SelectedTab = TabPage6
+                    btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
+                    btnAddNew.BackColor = Color.FromArgb(64, 141, 179)
+                    btnPlanList.BackColor = Color.FromArgb(64, 141, 179)
+                    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
+                    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnAddNew.Height
+                    panelNav.Top = btnAddNew.Top
+                    panelNav.Left = btnAddNew.Left
+                    btnFeedback.BackColor = Color.FromArgb(111, 192, 232)
                 Case "btnSettings"
                     TabControl1.SelectedTab = TabPage3
                     btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
                     btnAddNew.BackColor = Color.FromArgb(64, 141, 179)
+                    btnFeedback.BackColor = Color.FromArgb(64, 141, 179)
                     btnPlanList.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnSettings.Height
@@ -80,6 +96,7 @@ Public Class Company
                     TabControl1.SelectedTab = TabPage4
                     btnDashboard.BackColor = Color.FromArgb(64, 141, 179)
                     btnAddNew.BackColor = Color.FromArgb(64, 141, 179)
+                    btnFeedback.BackColor = Color.FromArgb(64, 141, 179)
                     btnPlanList.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnCSV.Height
@@ -165,5 +182,53 @@ Public Class Company
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         LogIn.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnAdd_MouseEnter(sender As Object, e As EventArgs) Handles btnAdd.MouseEnter
+        btnAdd.Image = New Bitmap(My.Resources.btnAddHover)
+    End Sub
+
+    Private Sub btnAdd_MouseLeave(sender As Object, e As EventArgs) Handles btnAdd.MouseLeave
+        btnAdd.Image = New Bitmap(My.Resources.btnAdd)
+    End Sub
+
+    Private Sub btnUpload_MouseEnter(sender As Object, e As EventArgs) Handles btnUpload.MouseEnter
+        btnUpload.Image = New Bitmap(My.Resources.btnUploadHover)
+    End Sub
+
+    Private Sub btnUpload_MouseLeave(sender As Object, e As EventArgs) Handles btnUpload.MouseLeave
+        btnUpload.Image = New Bitmap(My.Resources.btnUpload)
+    End Sub
+
+    Private Sub btnUpload_Click(sender As Object, e As EventArgs) Handles btnUpload.Click
+        Dim openphoto As New OpenFileDialog
+
+        openphoto.Filter = ("Picture File (*.jpg)|*.jpg, *.png, *.jpeg, *.bmp")
+
+        openphoto.ShowDialog()
+
+        picExample.ImageLocation = openphoto.FileName
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        txtName.Enabled = True
+        txtPassword.Enabled = True
+        txtEmail.Enabled = True
+        txtCPassword.Enabled = True
+        txtPhone.Enabled = True
+        txtAddress1.Enabled = True
+
+        btnEdit.Visible = False
+        btnCancel.Visible = True
+        btnSave.Visible = True
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        txtName.Enabled = False
+        txtPassword.Enabled = False
+        txtEmail.Enabled = False
+        txtCPassword.Enabled = False
+        txtPhone.Enabled = False
+        txtAddress1.Enabled = False
     End Sub
 End Class

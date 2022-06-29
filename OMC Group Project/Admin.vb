@@ -122,13 +122,9 @@ Public Class Admin
         WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnSave_MouseEnter(sender As Object, e As EventArgs) Handles btnSave.MouseEnter
-        btnSave.Image = New Bitmap(My.Resources.btnSaveHover)
-    End Sub
 
-    Private Sub btnSave_MouseLeave(sender As Object, e As EventArgs) Handles btnSave.MouseLeave
-        btnSave.Image = New Bitmap(My.Resources.btnSave)
-    End Sub
+
+
 
     Private Sub btnEdit_MouseEnter(sender As Object, e As EventArgs) Handles btnEdit.MouseEnter
         btnEdit.Image = New Bitmap(My.Resources.btnEditHover)
@@ -138,13 +134,6 @@ Public Class Admin
         btnEdit.Image = New Bitmap(My.Resources.btnEdit)
     End Sub
 
-    Private Sub btnCancel_MouseEnter(sender As Object, e As EventArgs) Handles btnCancel.MouseEnter
-        btnCancel.Image = New Bitmap(My.Resources.btnCancelHover)
-    End Sub
-
-    Private Sub btnCancel_MouseLeave(sender As Object, e As EventArgs) Handles btnCancel.MouseLeave
-        btnCancel.Image = New Bitmap(My.Resources.btnCancel)
-    End Sub
 
     Private Sub btnBook_Click(sender As Object, e As EventArgs)
         btnApproval.PerformClick()
@@ -153,5 +142,23 @@ Public Class Admin
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         LogIn.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        Dim strID As String
+        strID = InputBox("Enter the ID to edit", "Edit User")
+    End Sub
+
+    Private Sub btnDelUser_MouseEnter(sender As Object, e As EventArgs) Handles btnDelUser.MouseEnter
+        btnDelUser.Image = New Bitmap(My.Resources.btnDelAdminHover)
+    End Sub
+
+    Private Sub btnDelUser_MouseLeave(sender As Object, e As EventArgs) Handles btnDelUser.MouseLeave
+        btnDelUser.Image = New Bitmap(My.Resources.btnDelAdmin)
+    End Sub
+
+    Private Sub btnDelUser_Click(sender As Object, e As EventArgs) Handles btnDelUser.Click
+        Dim strID As String
+        strID = InputBox("Enter the ID to Delete", "Delete User")
     End Sub
 End Class

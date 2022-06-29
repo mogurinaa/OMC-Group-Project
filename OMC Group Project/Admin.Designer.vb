@@ -24,22 +24,11 @@ Partial Class Admin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.panelMain = New System.Windows.Forms.Panel()
-        Me.btnViewBooking = New System.Windows.Forms.Button()
         Me.panelNav = New System.Windows.Forms.Panel()
-        Me.btnViewPlan = New System.Windows.Forms.Button()
-        Me.btnViewUser = New System.Windows.Forms.Button()
-        Me.btnApproval = New System.Windows.Forms.Button()
-        Me.btnLogOut = New System.Windows.Forms.Button()
-        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimise = New System.Windows.Forms.Button()
-        Me.btnMaximise = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblCost2 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -59,15 +48,10 @@ Partial Class Admin
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.pnlCSV = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
@@ -75,21 +59,37 @@ Partial Class Admin
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.pnlPlan1 = New OMC_Group_Project.Panel_VB(Me.components)
         Me.pnlPlan2 = New OMC_Group_Project.Panel_VB(Me.components)
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.btnMinimise = New System.Windows.Forms.Button()
+        Me.btnMaximise = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnViewBooking = New System.Windows.Forms.Button()
+        Me.btnViewPlan = New System.Windows.Forms.Button()
+        Me.btnViewUser = New System.Windows.Forms.Button()
+        Me.btnApproval = New System.Windows.Forms.Button()
+        Me.btnLogOut = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.picTravel1 = New System.Windows.Forms.PictureBox()
         Me.picTravel2 = New System.Windows.Forms.PictureBox()
         Me.btnUp = New System.Windows.Forms.PictureBox()
@@ -100,46 +100,41 @@ Partial Class Admin
         Me.pictRect = New System.Windows.Forms.PictureBox()
         Me.pictRect2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.btnCancel = New System.Windows.Forms.PictureBox()
-        Me.btnSave = New System.Windows.Forms.PictureBox()
         Me.btnEdit = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.btnDelUser = New System.Windows.Forms.PictureBox()
         Me.panelMain.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlControl.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSettings.SuspendLayout()
         Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCSV.SuspendLayout()
         Me.Panel11.SuspendLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTravel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTravel2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnUp, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,17 +145,24 @@ Partial Class Admin
         CType(Me.pictRect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictRect2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage3.SuspendLayout()
-        CType(Me.btnCancel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnSave, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage5.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnDelUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelMain
@@ -180,23 +182,6 @@ Partial Class Admin
         Me.panelMain.Size = New System.Drawing.Size(200, 600)
         Me.panelMain.TabIndex = 9
         '
-        'btnViewBooking
-        '
-        Me.btnViewBooking.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnViewBooking.FlatAppearance.BorderSize = 0
-        Me.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnViewBooking.Font = New System.Drawing.Font("Segoe UI", 10.2!)
-        Me.btnViewBooking.ForeColor = System.Drawing.Color.White
-        Me.btnViewBooking.Image = Global.OMC_Group_Project.My.Resources.Resources.btnCSV
-        Me.btnViewBooking.Location = New System.Drawing.Point(0, 432)
-        Me.btnViewBooking.Name = "btnViewBooking"
-        Me.btnViewBooking.Size = New System.Drawing.Size(200, 58)
-        Me.btnViewBooking.TabIndex = 11
-        Me.btnViewBooking.Text = "View Booking"
-        Me.btnViewBooking.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnViewBooking.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnViewBooking.UseVisualStyleBackColor = True
-        '
         'panelNav
         '
         Me.panelNav.BackColor = System.Drawing.Color.White
@@ -204,91 +189,6 @@ Partial Class Admin
         Me.panelNav.Name = "panelNav"
         Me.panelNav.Size = New System.Drawing.Size(3, 100)
         Me.panelNav.TabIndex = 7
-        '
-        'btnViewPlan
-        '
-        Me.btnViewPlan.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnViewPlan.FlatAppearance.BorderSize = 0
-        Me.btnViewPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnViewPlan.Font = New System.Drawing.Font("Segoe UI", 10.2!)
-        Me.btnViewPlan.ForeColor = System.Drawing.Color.White
-        Me.btnViewPlan.Image = Global.OMC_Group_Project.My.Resources.Resources.btnCSV
-        Me.btnViewPlan.Location = New System.Drawing.Point(0, 374)
-        Me.btnViewPlan.Name = "btnViewPlan"
-        Me.btnViewPlan.Size = New System.Drawing.Size(200, 58)
-        Me.btnViewPlan.TabIndex = 10
-        Me.btnViewPlan.Text = "View Plan"
-        Me.btnViewPlan.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnViewPlan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnViewPlan.UseVisualStyleBackColor = True
-        '
-        'btnViewUser
-        '
-        Me.btnViewUser.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnViewUser.FlatAppearance.BorderSize = 0
-        Me.btnViewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnViewUser.Font = New System.Drawing.Font("Segoe UI", 10.2!)
-        Me.btnViewUser.ForeColor = System.Drawing.Color.White
-        Me.btnViewUser.Image = Global.OMC_Group_Project.My.Resources.Resources.btnSettings
-        Me.btnViewUser.Location = New System.Drawing.Point(0, 316)
-        Me.btnViewUser.Name = "btnViewUser"
-        Me.btnViewUser.Size = New System.Drawing.Size(200, 58)
-        Me.btnViewUser.TabIndex = 9
-        Me.btnViewUser.Text = "View User"
-        Me.btnViewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnViewUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnViewUser.UseVisualStyleBackColor = True
-        '
-        'btnApproval
-        '
-        Me.btnApproval.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnApproval.FlatAppearance.BorderSize = 0
-        Me.btnApproval.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnApproval.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnApproval.ForeColor = System.Drawing.Color.White
-        Me.btnApproval.Image = Global.OMC_Group_Project.My.Resources.Resources.btnTravel
-        Me.btnApproval.Location = New System.Drawing.Point(0, 258)
-        Me.btnApproval.Name = "btnApproval"
-        Me.btnApproval.Size = New System.Drawing.Size(200, 58)
-        Me.btnApproval.TabIndex = 8
-        Me.btnApproval.Text = "Approval"
-        Me.btnApproval.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnApproval.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnApproval.UseVisualStyleBackColor = True
-        '
-        'btnLogOut
-        '
-        Me.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnLogOut.FlatAppearance.BorderSize = 0
-        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogOut.Font = New System.Drawing.Font("Segoe UI", 10.2!)
-        Me.btnLogOut.ForeColor = System.Drawing.Color.White
-        Me.btnLogOut.Image = Global.OMC_Group_Project.My.Resources.Resources.btnLogout
-        Me.btnLogOut.Location = New System.Drawing.Point(0, 542)
-        Me.btnLogOut.Name = "btnLogOut"
-        Me.btnLogOut.Size = New System.Drawing.Size(200, 58)
-        Me.btnLogOut.TabIndex = 6
-        Me.btnLogOut.Text = "Log Out"
-        Me.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnLogOut.UseVisualStyleBackColor = True
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDashboard.FlatAppearance.BorderSize = 0
-        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDashboard.ForeColor = System.Drawing.Color.White
-        Me.btnDashboard.Image = Global.OMC_Group_Project.My.Resources.Resources.btnTravel
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 200)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Size = New System.Drawing.Size(200, 58)
-        Me.btnDashboard.TabIndex = 3
-        Me.btnDashboard.Text = "Dashboard"
-        Me.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDashboard.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -304,14 +204,14 @@ Partial Class Admin
         '
         'lblUsername
         '
-        Me.lblUsername.AutoSize = True
         Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblUsername.ForeColor = System.Drawing.Color.White
-        Me.lblUsername.Location = New System.Drawing.Point(35, 158)
+        Me.lblUsername.Location = New System.Drawing.Point(5, 158)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(126, 23)
-        Me.lblUsername.TabIndex = 2
-        Me.lblUsername.Text = "<USERNAME>"
+        Me.lblUsername.Size = New System.Drawing.Size(188, 23)
+        Me.lblUsername.TabIndex = 3
+        Me.lblUsername.Text = "<admin>"
+        Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
@@ -324,17 +224,6 @@ Partial Class Admin
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome"
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = Global.OMC_Group_Project.My.Resources.Resources.userIcon
-        Me.PictureBox3.Location = New System.Drawing.Point(30, 31)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(137, 101)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
-        '
         'pnlControl
         '
         Me.pnlControl.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -346,54 +235,6 @@ Partial Class Admin
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(1000, 25)
         Me.pnlControl.TabIndex = 1
-        '
-        'btnMinimise
-        '
-        Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
-        Me.btnMinimise.FlatAppearance.BorderSize = 0
-        Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
-        Me.btnMinimise.Location = New System.Drawing.Point(922, 0)
-        Me.btnMinimise.Name = "btnMinimise"
-        Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
-        Me.btnMinimise.TabIndex = 25
-        Me.btnMinimise.UseVisualStyleBackColor = False
-        '
-        'btnMaximise
-        '
-        Me.btnMaximise.BackColor = System.Drawing.Color.Transparent
-        Me.btnMaximise.Enabled = False
-        Me.btnMaximise.FlatAppearance.BorderSize = 0
-        Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
-        Me.btnMaximise.Location = New System.Drawing.Point(946, 0)
-        Me.btnMaximise.Name = "btnMaximise"
-        Me.btnMaximise.Size = New System.Drawing.Size(27, 24)
-        Me.btnMaximise.TabIndex = 24
-        Me.btnMaximise.UseVisualStyleBackColor = False
-        '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.Transparent
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
-        Me.btnClose.Location = New System.Drawing.Point(970, 0)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(27, 24)
-        Me.btnClose.TabIndex = 23
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 22
-        Me.PictureBox2.TabStop = False
         '
         'Label4
         '
@@ -423,9 +264,9 @@ Partial Class Admin
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(149, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(181, 23)
+        Me.Label2.Size = New System.Drawing.Size(161, 23)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Select your travel plan"
+        Me.Label2.Text = "Approve travel plan"
         '
         'lblLocation2
         '
@@ -613,17 +454,6 @@ Partial Class Admin
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "<Location 1>"
         '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.White
-        Me.PictureBox9.Image = Global.OMC_Group_Project.My.Resources.Resources.locationIcon
-        Me.PictureBox9.Location = New System.Drawing.Point(170, 146)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(49, 50)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 18
-        Me.PictureBox9.TabStop = False
-        '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.White
@@ -646,29 +476,6 @@ Partial Class Admin
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "<Travel Plan Name 2>"
         '
-        'PictureBox12
-        '
-        Me.PictureBox12.Enabled = False
-        Me.PictureBox12.Image = Global.OMC_Group_Project.My.Resources.Resources.langkawi_hd
-        Me.PictureBox12.Location = New System.Drawing.Point(14, 11)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(152, 186)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox12.TabIndex = 5
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox13.Image = Global.OMC_Group_Project.My.Resources.Resources.Travel_Rectangle_BG
-        Me.PictureBox13.Location = New System.Drawing.Point(10, 7)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(717, 195)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox13.TabIndex = 6
-        Me.PictureBox13.TabStop = False
-        '
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -689,27 +496,6 @@ Partial Class Admin
         Me.Label16.Size = New System.Drawing.Size(57, 23)
         Me.Label16.TabIndex = 11
         Me.Label16.Text = "Home"
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.OMC_Group_Project.My.Resources.Resources.travelLogo
-        Me.PictureBox14.Location = New System.Drawing.Point(19, 17)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(143, 89)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox14.TabIndex = 10
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox15.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
-        Me.PictureBox15.Location = New System.Drawing.Point(1, 112)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(800, 521)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox15.TabIndex = 0
-        Me.PictureBox15.TabStop = False
         '
         'pnlCSV
         '
@@ -793,17 +579,6 @@ Partial Class Admin
         Me.Label19.TabIndex = 19
         Me.Label19.Text = "<Location 1>"
         '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.White
-        Me.PictureBox16.Image = Global.OMC_Group_Project.My.Resources.Resources.locationIcon
-        Me.PictureBox16.Location = New System.Drawing.Point(170, 146)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(49, 50)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox16.TabIndex = 18
-        Me.PictureBox16.TabStop = False
-        '
         'Label20
         '
         Me.Label20.BackColor = System.Drawing.Color.White
@@ -826,29 +601,6 @@ Partial Class Admin
         Me.Label21.TabIndex = 15
         Me.Label21.Text = "<Travel Plan Name 2>"
         '
-        'PictureBox18
-        '
-        Me.PictureBox18.Enabled = False
-        Me.PictureBox18.Image = Global.OMC_Group_Project.My.Resources.Resources.langkawi_hd
-        Me.PictureBox18.Location = New System.Drawing.Point(14, 11)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(152, 186)
-        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox18.TabIndex = 5
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox19.Image = Global.OMC_Group_Project.My.Resources.Resources.Travel_Rectangle_BG
-        Me.PictureBox19.Location = New System.Drawing.Point(10, 7)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(717, 195)
-        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox19.TabIndex = 6
-        Me.PictureBox19.TabStop = False
-        '
         'Label22
         '
         Me.Label22.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -870,27 +622,6 @@ Partial Class Admin
         Me.Label23.TabIndex = 11
         Me.Label23.Text = "Home"
         '
-        'PictureBox20
-        '
-        Me.PictureBox20.Image = Global.OMC_Group_Project.My.Resources.Resources.travelLogo
-        Me.PictureBox20.Location = New System.Drawing.Point(19, 17)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(143, 89)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox20.TabIndex = 10
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox21.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
-        Me.PictureBox21.Location = New System.Drawing.Point(1, 112)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(800, 521)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox21.TabIndex = 0
-        Me.PictureBox21.TabStop = False
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
@@ -907,6 +638,7 @@ Partial Class Admin
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.PictureBox8)
         Me.TabPage1.Controls.Add(Me.Label11)
         Me.TabPage1.Controls.Add(Me.Label10)
         Me.TabPage1.Controls.Add(Me.Label9)
@@ -919,16 +651,38 @@ Partial Class Admin
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Dashboard"
         '
-        'PictureBox17
+        'Label11
         '
-        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox17.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
-        Me.PictureBox17.Location = New System.Drawing.Point(0, 95)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(802, 498)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox17.TabIndex = 0
-        Me.PictureBox17.TabStop = False
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(56, 272)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(122, 23)
+        Me.Label11.TabIndex = 14
+        Me.Label11.Text = "Total Booking :"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(56, 214)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(250, 23)
+        Me.Label10.TabIndex = 13
+        Me.Label10.Text = "Total Approved Travel Plan : <>"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(56, 156)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(254, 23)
+        Me.Label9.TabIndex = 12
+        Me.Label9.Text = "Total Registered Users : <users>"
         '
         'TabPage2
         '
@@ -980,6 +734,259 @@ Partial Class Admin
         Me.pnlPlan2.Opacity = 0
         Me.pnlPlan2.Size = New System.Drawing.Size(688, 195)
         Me.pnlPlan2.TabIndex = 13
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.TabPage3.Controls.Add(Me.btnDelUser)
+        Me.TabPage3.Controls.Add(Me.btnEdit)
+        Me.TabPage3.Controls.Add(Me.PictureBox24)
+        Me.TabPage3.Controls.Add(Me.Label25)
+        Me.TabPage3.Controls.Add(Me.PictureBox10)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(802, 562)
+        Me.TabPage3.TabIndex = 4
+        Me.TabPage3.Text = "View User"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(156, 29)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(93, 23)
+        Me.Label25.TabIndex = 39
+        Me.Label25.Text = "View Users"
+        '
+        'TabPage4
+        '
+        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.TabPage4.Controls.Add(Me.Label26)
+        Me.TabPage4.Controls.Add(Me.PictureBox25)
+        Me.TabPage4.Controls.Add(Me.PictureBox22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(802, 562)
+        Me.TabPage4.TabIndex = 5
+        Me.TabPage4.Text = "View Plan"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(159, 32)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(142, 23)
+        Me.Label26.TabIndex = 41
+        Me.Label26.Text = "View Travel Plans"
+        '
+        'TabPage5
+        '
+        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.TabPage5.Controls.Add(Me.PictureBox11)
+        Me.TabPage5.Controls.Add(Me.Label12)
+        Me.TabPage5.Controls.Add(Me.PictureBox7)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(802, 562)
+        Me.TabPage5.TabIndex = 6
+        Me.TabPage5.Text = "View Booking"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(159, 36)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(122, 23)
+        Me.Label12.TabIndex = 42
+        Me.Label12.Text = "View Bookings"
+        '
+        'btnMinimise
+        '
+        Me.btnMinimise.BackColor = System.Drawing.Color.Transparent
+        Me.btnMinimise.FlatAppearance.BorderSize = 0
+        Me.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimise.Image = Global.OMC_Group_Project.My.Resources.Resources.Minimise
+        Me.btnMinimise.Location = New System.Drawing.Point(922, 0)
+        Me.btnMinimise.Name = "btnMinimise"
+        Me.btnMinimise.Size = New System.Drawing.Size(27, 24)
+        Me.btnMinimise.TabIndex = 25
+        Me.btnMinimise.UseVisualStyleBackColor = False
+        '
+        'btnMaximise
+        '
+        Me.btnMaximise.BackColor = System.Drawing.Color.Transparent
+        Me.btnMaximise.Enabled = False
+        Me.btnMaximise.FlatAppearance.BorderSize = 0
+        Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximise.Image = Global.OMC_Group_Project.My.Resources.Resources.Maximize
+        Me.btnMaximise.Location = New System.Drawing.Point(946, 0)
+        Me.btnMaximise.Name = "btnMaximise"
+        Me.btnMaximise.Size = New System.Drawing.Size(27, 24)
+        Me.btnMaximise.TabIndex = 24
+        Me.btnMaximise.UseVisualStyleBackColor = False
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.OMC_Group_Project.My.Resources.Resources.Close
+        Me.btnClose.Location = New System.Drawing.Point(970, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(27, 24)
+        Me.btnClose.TabIndex = 23
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.OMC_Group_Project.My.Resources.Resources.MAME_Logo_no_text
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
+        '
+        'btnViewBooking
+        '
+        Me.btnViewBooking.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnViewBooking.FlatAppearance.BorderSize = 0
+        Me.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewBooking.Font = New System.Drawing.Font("Segoe UI", 10.2!)
+        Me.btnViewBooking.ForeColor = System.Drawing.Color.White
+        Me.btnViewBooking.Image = Global.OMC_Group_Project.My.Resources.Resources.bookRecord
+        Me.btnViewBooking.Location = New System.Drawing.Point(0, 432)
+        Me.btnViewBooking.Name = "btnViewBooking"
+        Me.btnViewBooking.Size = New System.Drawing.Size(200, 58)
+        Me.btnViewBooking.TabIndex = 11
+        Me.btnViewBooking.Text = "View Booking"
+        Me.btnViewBooking.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnViewBooking.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnViewBooking.UseVisualStyleBackColor = True
+        '
+        'btnViewPlan
+        '
+        Me.btnViewPlan.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnViewPlan.FlatAppearance.BorderSize = 0
+        Me.btnViewPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewPlan.Font = New System.Drawing.Font("Segoe UI", 10.2!)
+        Me.btnViewPlan.ForeColor = System.Drawing.Color.White
+        Me.btnViewPlan.Image = Global.OMC_Group_Project.My.Resources.Resources.btnTravel
+        Me.btnViewPlan.Location = New System.Drawing.Point(0, 374)
+        Me.btnViewPlan.Name = "btnViewPlan"
+        Me.btnViewPlan.Size = New System.Drawing.Size(200, 58)
+        Me.btnViewPlan.TabIndex = 10
+        Me.btnViewPlan.Text = "View Plan"
+        Me.btnViewPlan.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnViewPlan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnViewPlan.UseVisualStyleBackColor = True
+        '
+        'btnViewUser
+        '
+        Me.btnViewUser.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnViewUser.FlatAppearance.BorderSize = 0
+        Me.btnViewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewUser.Font = New System.Drawing.Font("Segoe UI", 10.2!)
+        Me.btnViewUser.ForeColor = System.Drawing.Color.White
+        Me.btnViewUser.Image = Global.OMC_Group_Project.My.Resources.Resources.userbtn
+        Me.btnViewUser.Location = New System.Drawing.Point(0, 316)
+        Me.btnViewUser.Name = "btnViewUser"
+        Me.btnViewUser.Size = New System.Drawing.Size(200, 58)
+        Me.btnViewUser.TabIndex = 9
+        Me.btnViewUser.Text = " View User"
+        Me.btnViewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnViewUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnViewUser.UseVisualStyleBackColor = True
+        '
+        'btnApproval
+        '
+        Me.btnApproval.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnApproval.FlatAppearance.BorderSize = 0
+        Me.btnApproval.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnApproval.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnApproval.ForeColor = System.Drawing.Color.White
+        Me.btnApproval.Image = Global.OMC_Group_Project.My.Resources.Resources.btnTravel
+        Me.btnApproval.Location = New System.Drawing.Point(0, 258)
+        Me.btnApproval.Name = "btnApproval"
+        Me.btnApproval.Size = New System.Drawing.Size(200, 58)
+        Me.btnApproval.TabIndex = 8
+        Me.btnApproval.Text = "Approval"
+        Me.btnApproval.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnApproval.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnApproval.UseVisualStyleBackColor = True
+        '
+        'btnLogOut
+        '
+        Me.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnLogOut.FlatAppearance.BorderSize = 0
+        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogOut.Font = New System.Drawing.Font("Segoe UI", 10.2!)
+        Me.btnLogOut.ForeColor = System.Drawing.Color.White
+        Me.btnLogOut.Image = Global.OMC_Group_Project.My.Resources.Resources.btnLogout
+        Me.btnLogOut.Location = New System.Drawing.Point(0, 542)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(200, 58)
+        Me.btnLogOut.TabIndex = 6
+        Me.btnLogOut.Text = "Log Out"
+        Me.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnLogOut.UseVisualStyleBackColor = True
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDashboard.ForeColor = System.Drawing.Color.White
+        Me.btnDashboard.Image = Global.OMC_Group_Project.My.Resources.Resources.dashboard_btn
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 200)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(200, 58)
+        Me.btnDashboard.TabIndex = 3
+        Me.btnDashboard.Text = " Dashboard"
+        Me.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDashboard.UseVisualStyleBackColor = True
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = Global.OMC_Group_Project.My.Resources.Resources.userIcon
+        Me.PictureBox3.Location = New System.Drawing.Point(30, 31)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(137, 101)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.OMC_Group_Project.My.Resources.Resources.dashboardbig
+        Me.PictureBox8.Location = New System.Drawing.Point(2, 3)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(143, 89)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 15
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox17.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
+        Me.PictureBox17.Location = New System.Drawing.Point(0, 95)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(802, 498)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox17.TabIndex = 0
+        Me.PictureBox17.TabStop = False
         '
         'picTravel1
         '
@@ -1095,45 +1102,6 @@ Partial Class Admin
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'TabPage3
-        '
-        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TabPage3.Controls.Add(Me.btnCancel)
-        Me.TabPage3.Controls.Add(Me.btnSave)
-        Me.TabPage3.Controls.Add(Me.btnEdit)
-        Me.TabPage3.Controls.Add(Me.PictureBox24)
-        Me.TabPage3.Controls.Add(Me.Label25)
-        Me.TabPage3.Controls.Add(Me.PictureBox10)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(802, 562)
-        Me.TabPage3.TabIndex = 4
-        Me.TabPage3.Text = "View User"
-        '
-        'btnCancel
-        '
-        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancel.Image = Global.OMC_Group_Project.My.Resources.Resources.btnCancel
-        Me.btnCancel.Location = New System.Drawing.Point(338, 21)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(183, 49)
-        Me.btnCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnCancel.TabIndex = 42
-        Me.btnCancel.TabStop = False
-        Me.btnCancel.Visible = False
-        '
-        'btnSave
-        '
-        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSave.Image = Global.OMC_Group_Project.My.Resources.Resources.btnSave
-        Me.btnSave.Location = New System.Drawing.Point(559, 21)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(230, 49)
-        Me.btnSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnSave.TabIndex = 41
-        Me.btnSave.TabStop = False
-        '
         'btnEdit
         '
         Me.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand
@@ -1147,23 +1115,13 @@ Partial Class Admin
         '
         'PictureBox24
         '
-        Me.PictureBox24.Image = Global.OMC_Group_Project.My.Resources.Resources.settingsLogo
+        Me.PictureBox24.Image = Global.OMC_Group_Project.My.Resources.Resources.Sample_User_Icon
         Me.PictureBox24.Location = New System.Drawing.Point(7, 3)
         Me.PictureBox24.Name = "PictureBox24"
         Me.PictureBox24.Size = New System.Drawing.Size(143, 89)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox24.TabIndex = 38
         Me.PictureBox24.TabStop = False
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(156, 29)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(93, 23)
-        Me.Label25.TabIndex = 39
-        Me.Label25.Text = "View Users"
         '
         'PictureBox10
         '
@@ -1176,32 +1134,9 @@ Partial Class Admin
         Me.PictureBox10.TabIndex = 1
         Me.PictureBox10.TabStop = False
         '
-        'TabPage4
-        '
-        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TabPage4.Controls.Add(Me.Label26)
-        Me.TabPage4.Controls.Add(Me.PictureBox25)
-        Me.TabPage4.Controls.Add(Me.PictureBox22)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(802, 562)
-        Me.TabPage4.TabIndex = 5
-        Me.TabPage4.Text = "View Plan"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(159, 32)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(142, 23)
-        Me.Label26.TabIndex = 41
-        Me.Label26.Text = "View Travel Plans"
-        '
         'PictureBox25
         '
-        Me.PictureBox25.Image = Global.OMC_Group_Project.My.Resources.Resources.settingsLogo
+        Me.PictureBox25.Image = Global.OMC_Group_Project.My.Resources.Resources.travelLogo
         Me.PictureBox25.Location = New System.Drawing.Point(10, 6)
         Me.PictureBox25.Name = "PictureBox25"
         Me.PictureBox25.Size = New System.Drawing.Size(143, 89)
@@ -1220,17 +1155,15 @@ Partial Class Admin
         Me.PictureBox22.TabIndex = 2
         Me.PictureBox22.TabStop = False
         '
-        'TabPage5
+        'PictureBox11
         '
-        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TabPage5.Controls.Add(Me.Label12)
-        Me.TabPage5.Controls.Add(Me.PictureBox7)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(802, 562)
-        Me.TabPage5.TabIndex = 6
-        Me.TabPage5.Text = "View Booking"
+        Me.PictureBox11.Image = Global.OMC_Group_Project.My.Resources.Resources.pastbook_icon
+        Me.PictureBox11.Location = New System.Drawing.Point(7, 6)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(143, 89)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 43
+        Me.PictureBox11.TabStop = False
         '
         'PictureBox7
         '
@@ -1243,48 +1176,126 @@ Partial Class Admin
         Me.PictureBox7.TabIndex = 2
         Me.PictureBox7.TabStop = False
         '
-        'Label9
+        'PictureBox16
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(56, 156)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(254, 23)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "Total Registered Users : <users>"
+        Me.PictureBox16.BackColor = System.Drawing.Color.White
+        Me.PictureBox16.Image = Global.OMC_Group_Project.My.Resources.Resources.locationIcon
+        Me.PictureBox16.Location = New System.Drawing.Point(170, 146)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(49, 50)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox16.TabIndex = 18
+        Me.PictureBox16.TabStop = False
         '
-        'Label10
+        'PictureBox18
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(56, 214)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(250, 23)
-        Me.Label10.TabIndex = 13
-        Me.Label10.Text = "Total Approved Travel Plan : <>"
+        Me.PictureBox18.Enabled = False
+        Me.PictureBox18.Image = Global.OMC_Group_Project.My.Resources.Resources.langkawi_hd
+        Me.PictureBox18.Location = New System.Drawing.Point(14, 11)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(152, 186)
+        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox18.TabIndex = 5
+        Me.PictureBox18.TabStop = False
         '
-        'Label11
+        'PictureBox19
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(56, 272)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(122, 23)
-        Me.Label11.TabIndex = 14
-        Me.Label11.Text = "Total Booking :"
+        Me.PictureBox19.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox19.Image = Global.OMC_Group_Project.My.Resources.Resources.Travel_Rectangle_BG
+        Me.PictureBox19.Location = New System.Drawing.Point(10, 7)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(717, 195)
+        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox19.TabIndex = 6
+        Me.PictureBox19.TabStop = False
         '
-        'Label12
+        'PictureBox20
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(159, 36)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(122, 23)
-        Me.Label12.TabIndex = 42
-        Me.Label12.Text = "View Bookings"
+        Me.PictureBox20.Image = Global.OMC_Group_Project.My.Resources.Resources.travelLogo
+        Me.PictureBox20.Location = New System.Drawing.Point(19, 17)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(143, 89)
+        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox20.TabIndex = 10
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox21.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
+        Me.PictureBox21.Location = New System.Drawing.Point(1, 112)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(800, 521)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox21.TabIndex = 0
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.White
+        Me.PictureBox9.Image = Global.OMC_Group_Project.My.Resources.Resources.locationIcon
+        Me.PictureBox9.Location = New System.Drawing.Point(170, 146)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(49, 50)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 18
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Enabled = False
+        Me.PictureBox12.Image = Global.OMC_Group_Project.My.Resources.Resources.langkawi_hd
+        Me.PictureBox12.Location = New System.Drawing.Point(14, 11)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(152, 186)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox12.TabIndex = 5
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox13.Image = Global.OMC_Group_Project.My.Resources.Resources.Travel_Rectangle_BG
+        Me.PictureBox13.Location = New System.Drawing.Point(10, 7)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(717, 195)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox13.TabIndex = 6
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.OMC_Group_Project.My.Resources.Resources.travelLogo
+        Me.PictureBox14.Location = New System.Drawing.Point(19, 17)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(143, 89)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox14.TabIndex = 10
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox15.Image = Global.OMC_Group_Project.My.Resources.Resources.HOME_Rectangle
+        Me.PictureBox15.Location = New System.Drawing.Point(1, 112)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(800, 521)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox15.TabIndex = 0
+        Me.PictureBox15.TabStop = False
+        '
+        'btnDelUser
+        '
+        Me.btnDelUser.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDelUser.Image = Global.OMC_Group_Project.My.Resources.Resources.btnDelAdmin
+        Me.btnDelUser.Location = New System.Drawing.Point(566, 21)
+        Me.btnDelUser.Name = "btnDelUser"
+        Me.btnDelUser.Size = New System.Drawing.Size(183, 49)
+        Me.btnDelUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnDelUser.TabIndex = 41
+        Me.btnDelUser.TabStop = False
         '
         'Admin
         '
@@ -1304,31 +1315,28 @@ Partial Class Admin
         Me.panelMain.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlControl.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSettings.ResumeLayout(False)
         Me.pnlSettings.PerformLayout()
         Me.Panel8.ResumeLayout(False)
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlCSV.ResumeLayout(False)
         Me.pnlCSV.PerformLayout()
         Me.Panel11.ResumeLayout(False)
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTravel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTravel2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnUp, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1339,20 +1347,24 @@ Partial Class Admin
         CType(Me.pictRect, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictRect2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage3.PerformLayout()
-        CType(Me.btnCancel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnSave, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage5.PerformLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnDelUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1362,7 +1374,6 @@ Partial Class Admin
     Friend WithEvents pnlControl As Panel
     Friend WithEvents btnLogOut As Button
     Friend WithEvents btnDashboard As Button
-    Friend WithEvents lblUsername As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents picTravel1 As PictureBox
@@ -1442,12 +1453,14 @@ Partial Class Admin
     Friend WithEvents PictureBox25 As PictureBox
     Friend WithEvents Label26 As Label
     Friend WithEvents TabPage5 As TabPage
-    Friend WithEvents btnCancel As PictureBox
-    Friend WithEvents btnSave As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents btnViewBooking As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents lblUsername As Label
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents btnDelUser As PictureBox
 End Class

@@ -28,4 +28,34 @@
         Company.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btn3m_Click(sender As Object, e As EventArgs) Handles btn3m.Click
+        btn3m.Image = New Bitmap(My.Resources._3month_selected)
+        btn6m.Image = New Bitmap(My.Resources._6_month)
+        btn9m.Image = New Bitmap(My.Resources._9_month)
+    End Sub
+
+    Private Sub btn6m_Click(sender As Object, e As EventArgs) Handles btn6m.Click
+        btn6m.Image = New Bitmap(My.Resources._6month_selected)
+        btn3m.Image = New Bitmap(My.Resources._3_month)
+        btn9m.Image = New Bitmap(My.Resources._9_month)
+    End Sub
+
+    Private Sub btn9m_Click(sender As Object, e As EventArgs) Handles btn9m.Click
+        btn9m.Image = New Bitmap(My.Resources._9month_selected)
+        btn3m.Image = New Bitmap(My.Resources._3_month)
+        btn6m.Image = New Bitmap(My.Resources._6_month)
+    End Sub
+
+    Private Sub btnSub_MouseEnter(sender As Object, e As EventArgs) Handles btnSub.MouseEnter
+        btnSub.Image = New Bitmap(My.Resources.btnSubHover)
+    End Sub
+
+    Private Sub btnSub_MouseLeave(sender As Object, e As EventArgs) Handles btnSub.MouseLeave
+        btnSub.Image = New Bitmap(My.Resources.btnSub)
+    End Sub
+
+    Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
+        pnlPayment.Visible = True
+    End Sub
 End Class

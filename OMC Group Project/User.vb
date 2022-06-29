@@ -25,7 +25,7 @@ Public Class User
         btnHome.PerformClick()
     End Sub
 
-    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnHome.Click, btnTravelPlan.Click, btnSettings.Click, btnCSV.Click
+    Private Sub btn_Click(sender As Object, e As EventArgs) Handles btnHome.Click, btnTravelPlan.Click, btnSettings.Click, btnCSV.Click, btnBookRecord.Click
         Try
 
             Dim Mybutton = DirectCast(sender, Button)
@@ -33,6 +33,7 @@ Public Class User
             Select Case Mybutton.Name
                 Case "btnHome"
                     TabControl1.SelectedTab = TabPage1
+                    btnBookRecord.BackColor = Color.FromArgb(64, 141, 179)
                     btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
@@ -43,6 +44,7 @@ Public Class User
                 Case "btnTravelPlan"
                     TabControl1.SelectedTab = TabPage2
                     btnHome.BackColor = Color.FromArgb(64, 141, 179)
+                    btnBookRecord.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnTravelPlan.Height
@@ -55,6 +57,7 @@ Public Class User
                 Case "btnSettings"
                     TabControl1.SelectedTab = TabPage3
                     btnHome.BackColor = Color.FromArgb(64, 141, 179)
+                    btnBookRecord.BackColor = Color.FromArgb(64, 141, 179)
                     btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
                     btnCSV.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnSettings.Height
@@ -64,12 +67,23 @@ Public Class User
                 Case "btnCSV"
                     TabControl1.SelectedTab = TabPage4
                     btnHome.BackColor = Color.FromArgb(64, 141, 179)
+                    btnBookRecord.BackColor = Color.FromArgb(64, 141, 179)
                     btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
                     btnSettings.BackColor = Color.FromArgb(64, 141, 179)
                     panelNav.Height = btnCSV.Height
                     panelNav.Top = btnCSV.Top
                     panelNav.Left = btnCSV.Left
                     btnCSV.BackColor = Color.FromArgb(111, 192, 232)
+                Case "btnBookRecord"
+                    TabControl1.SelectedTab = TabPage5
+                    btnHome.BackColor = Color.FromArgb(64, 141, 179)
+                    btnTravelPlan.BackColor = Color.FromArgb(64, 141, 179)
+                    btnSettings.BackColor = Color.FromArgb(64, 141, 179)
+                    btnCSV.BackColor = Color.FromArgb(64, 141, 179)
+                    panelNav.Height = btnCSV.Height
+                    panelNav.Top = btnCSV.Top
+                    panelNav.Left = btnCSV.Left
+                    btnBookRecord.BackColor = Color.FromArgb(111, 192, 232)
             End Select
         Catch ex As Exception
 
@@ -184,4 +198,54 @@ Public Class User
         LogIn.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        txtName.Enabled = False
+        txtPassword.Enabled = False
+        txtEmail.Enabled = False
+        txtCPassword.Enabled = False
+        txtPhone.Enabled = False
+        txtAddress1.Enabled = False
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        txtName.Enabled = True
+        txtPassword.Enabled = True
+        txtEmail.Enabled = True
+        txtCPassword.Enabled = True
+        txtPhone.Enabled = True
+        txtAddress1.Enabled = True
+
+        btnEdit.Visible = False
+        btnCancel.Visible = True
+        btnSave.Visible = True
+    End Sub
+
+    Private Sub btnFeedback_MouseEnter(sender As Object, e As EventArgs) Handles btnFeedback.MouseEnter
+        btnFeedback.Image = New Bitmap(My.Resources.btnFeedbackHover)
+    End Sub
+
+    Private Sub btnFeedback_MouseLeave(sender As Object, e As EventArgs) Handles btnFeedback.MouseLeave
+        btnFeedback.Image = New Bitmap(My.Resources.btnFeedback)
+    End Sub
+
+    Private Sub btnFeedback2_MouseEnter(sender As Object, e As EventArgs) Handles btnFeedback2.MouseEnter
+        btnFeedback.Image = New Bitmap(My.Resources.btnFeedbackHover)
+    End Sub
+
+    Private Sub btnFeedback2_MouseLeave(sender As Object, e As EventArgs) Handles btnFeedback2.MouseLeave
+        btnFeedback.Image = New Bitmap(My.Resources.btnFeedback)
+    End Sub
+
+    Private Sub btnFeedback_Click(sender As Object, e As EventArgs) Handles btnFeedback.Click
+        Dim strFeedback As String
+        strFeedback = InputBox("Enter feedback for your previous trip", "User Feedback")
+    End Sub
+
+    Private Sub btnFeedback2_Click(sender As Object, e As EventArgs) Handles btnFeedback2.Click
+        Dim strFeedback As String
+        strFeedback = InputBox("Enter feedback for your previous trip", "User Feedback")
+    End Sub
+
+
 End Class

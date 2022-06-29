@@ -27,6 +27,16 @@ Partial Class Register_Company
         Me.btnMaximise = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pnlPayment = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnReg = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btn9m = New System.Windows.Forms.PictureBox()
+        Me.btn6m = New System.Windows.Forms.PictureBox()
+        Me.btn3m = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -44,11 +54,17 @@ Partial Class Register_Company
         Me.txtAddress1 = New System.Windows.Forms.TextBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.txtAddress2 = New System.Windows.Forms.TextBox()
-        Me.btnReg = New System.Windows.Forms.PictureBox()
+        Me.btnSub = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlControl.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlPayment.SuspendLayout()
         CType(Me.btnReg, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn9m, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn6m, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn3m, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSub, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,6 +127,125 @@ Partial Class Register_Company
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 22
         Me.PictureBox2.TabStop = False
+        '
+        'pnlPayment
+        '
+        Me.pnlPayment.Controls.Add(Me.Label5)
+        Me.pnlPayment.Controls.Add(Me.btnReg)
+        Me.pnlPayment.Controls.Add(Me.Label4)
+        Me.pnlPayment.Controls.Add(Me.Label3)
+        Me.pnlPayment.Controls.Add(Me.Label2)
+        Me.pnlPayment.Controls.Add(Me.btn9m)
+        Me.pnlPayment.Controls.Add(Me.btn6m)
+        Me.pnlPayment.Controls.Add(Me.btn3m)
+        Me.pnlPayment.Controls.Add(Me.PictureBox6)
+        Me.pnlPayment.Location = New System.Drawing.Point(12, 33)
+        Me.pnlPayment.Name = "pnlPayment"
+        Me.pnlPayment.Size = New System.Drawing.Size(576, 523)
+        Me.pnlPayment.TabIndex = 22
+        Me.pnlPayment.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Bebas Neue Bold", 19.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label5.Location = New System.Drawing.Point(411, 278)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(104, 38)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "9 month"
+        '
+        'btnReg
+        '
+        Me.btnReg.BackColor = System.Drawing.Color.White
+        Me.btnReg.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReg.Image = Global.OMC_Group_Project.My.Resources.Resources.btnReg
+        Me.btnReg.Location = New System.Drawing.Point(222, 410)
+        Me.btnReg.Name = "btnReg"
+        Me.btnReg.Size = New System.Drawing.Size(121, 50)
+        Me.btnReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnReg.TabIndex = 4
+        Me.btnReg.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Bebas Neue Bold", 19.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label4.Location = New System.Drawing.Point(227, 278)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(104, 38)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "6 month"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Bebas Neue Bold", 19.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label3.Location = New System.Drawing.Point(50, 281)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 38)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "3 month"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Bebas Neue Bold", 19.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(103, 30)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(361, 38)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Please select subscription plan"
+        '
+        'btn9m
+        '
+        Me.btn9m.BackColor = System.Drawing.Color.White
+        Me.btn9m.Image = Global.OMC_Group_Project.My.Resources.Resources._9_month
+        Me.btn9m.Location = New System.Drawing.Point(376, 75)
+        Me.btn9m.Name = "btn9m"
+        Me.btn9m.Size = New System.Drawing.Size(174, 200)
+        Me.btn9m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btn9m.TabIndex = 2
+        Me.btn9m.TabStop = False
+        '
+        'btn6m
+        '
+        Me.btn6m.BackColor = System.Drawing.Color.White
+        Me.btn6m.Image = Global.OMC_Group_Project.My.Resources.Resources._6_month
+        Me.btn6m.Location = New System.Drawing.Point(196, 75)
+        Me.btn6m.Name = "btn6m"
+        Me.btn6m.Size = New System.Drawing.Size(174, 200)
+        Me.btn6m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btn6m.TabIndex = 1
+        Me.btn6m.TabStop = False
+        '
+        'btn3m
+        '
+        Me.btn3m.BackColor = System.Drawing.Color.White
+        Me.btn3m.Image = Global.OMC_Group_Project.My.Resources.Resources._3_month
+        Me.btn3m.Location = New System.Drawing.Point(19, 75)
+        Me.btn3m.Name = "btn3m"
+        Me.btn3m.Size = New System.Drawing.Size(174, 200)
+        Me.btn3m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btn3m.TabIndex = 0
+        Me.btn3m.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.OMC_Group_Project.My.Resources.Resources.register_rect
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(573, 506)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 3
+        Me.PictureBox6.TabStop = False
         '
         'txtUsername
         '
@@ -268,16 +403,17 @@ Partial Class Register_Company
         Me.txtAddress2.TabIndex = 20
         Me.txtAddress2.Text = "Address 2"
         '
-        'btnReg
+        'btnSub
         '
-        Me.btnReg.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReg.Image = Global.OMC_Group_Project.My.Resources.Resources.btnReg
-        Me.btnReg.Location = New System.Drawing.Point(236, 482)
-        Me.btnReg.Name = "btnReg"
-        Me.btnReg.Size = New System.Drawing.Size(121, 50)
-        Me.btnReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnReg.TabIndex = 4
-        Me.btnReg.TabStop = False
+        Me.btnSub.BackColor = System.Drawing.Color.Transparent
+        Me.btnSub.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSub.Image = Global.OMC_Group_Project.My.Resources.Resources.btnSub
+        Me.btnSub.Location = New System.Drawing.Point(208, 486)
+        Me.btnSub.Name = "btnSub"
+        Me.btnSub.Size = New System.Drawing.Size(190, 50)
+        Me.btnSub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSub.TabIndex = 23
+        Me.btnSub.TabStop = False
         '
         'PictureBox1
         '
@@ -294,6 +430,8 @@ Partial Class Register_Company
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 568)
+        Me.Controls.Add(Me.pnlPayment)
+        Me.Controls.Add(Me.btnSub)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.txtAddress2)
         Me.Controls.Add(Me.Panel7)
@@ -311,7 +449,6 @@ Partial Class Register_Company
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtUsername)
-        Me.Controls.Add(Me.btnReg)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlControl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -320,7 +457,14 @@ Partial Class Register_Company
         Me.Text = "Register_User"
         Me.pnlControl.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlPayment.ResumeLayout(False)
+        Me.pnlPayment.PerformLayout()
         CType(Me.btnReg, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn9m, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn6m, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn3m, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSub, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -351,4 +495,14 @@ Partial Class Register_Company
     Friend WithEvents txtAddress1 As TextBox
     Friend WithEvents Panel8 As Panel
     Friend WithEvents txtAddress2 As TextBox
+    Friend WithEvents pnlPayment As Panel
+    Friend WithEvents btn3m As PictureBox
+    Friend WithEvents btn9m As PictureBox
+    Friend WithEvents btn6m As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnSub As PictureBox
 End Class
